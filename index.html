@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="en-US">
+	<title>Talk Nerdy 2</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+	<a name="top">
+
+	<div class="container">
+		<header>
+			<img id="myImage" src="img/header.png">
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="mailto:bloviktrash@gmail.com?Subject=Test%20mail" target="_top">Contact</a></li>
+				<!-- Spaces between words should be replaced by %20 to ensure that the browser will display the text properly. -->
+				<!-- _top Opens the linked document in the full body of the window -->
+				<li><a href="../index.html">Sara's Page</a></li>
+			</ul>
+		</nav>
+	</div><!-- /container -->
+
+	<section>
+
+		<aside>
+			<p>
+				<button type="button" onclick="light(1)">Yellow</button>
+				<button type="button" onclick="light(0)">Black</button>
+			</p><hr>
+
+			<ul>
+				<li>Aside</li><br><br>
+				<li>Float Right</li><br><br>
+				<li>Width/Height</li><br><br>
+				<li>Box-Shadow</li><br><br>
+				<li>Margin</li>
+			</ul><br>
+
+			<hr><br>
+
+			<form id="howToDrop">
+				<select>
+					<option>- Dropdown Menu -</option>
+					<option>&lt;select&gt;</option>
+					<option>&lt;option&gt;</option>
+					<option>(value="")</option>
+					<option>&gt;text&lt;</option>
+					<option>&lt;/option&gt;</option>
+					<option>&lt;/select&gt;</option>
+				</select>
+			</form><br>
+			
+			<hr>
+
+			<div id="subscribe">
+				<p> Want our newsletter?</p>
+				<p>Enter your email address here:</p>
+				<input type="email" name="email"
+				value="subscribe">
+				<!-- Definition and Usage
+				The name attribute specifies the name of an <input> element.
+
+				The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+
+				Note: Only form elements with a name attribute will have their values passed when submitting a form. 
+				-->
+			</div>
+  
+		</aside>
+
+		<article>
+			<h1><i>Talk </i>Nerdy</h1>
+			<p class="cool">talk</b></p>
+			<ol>
+				<li>
+					speak in order to give information or express ideas or feelings; converse or communicate by spoken words: <span class="examples">the two men talked | we'd sit and talk about jazz | it was no use talking to Anthony | [ with obj. ] : you're talking rubbish.</span>
+				</li>
+				<li>
+					have the power of speech: <span class="examples">he can talk as well as you or I can.</span>
+				</li>
+				<li>
+					discuss personal or intimate feelings: <span class="examples">we need to talk, Maggie.</span>
+				</li>
+			</ol><br>
+		</article>
+
+		<article>
+			<h1>Talk <i>Nerd</i>-y</h1>
+			<p class="cool">nerd</p>
+			<p>noun informal</p>
+			<ol>
+				<li>
+					a foolish or contemptible person studious: <span class="examples">one of those nerds who never asked a girl to dance.</span>
+				</li>
+				<li>
+					a single-minded expert in a particular technical field: <span class="examples">a computer nerd.</span>
+				</li>
+			<ol><br>
+		</article>
+
+		<article>
+			<h1>Question</h1>
+			<p>I couldn't figure out how to get my "section" to grow with the articles. I tried using "min-height" but to no avail.</p>
+			<p>Answer: set overflow to hidden!</p>  
+		</article>
+
+		<footer>
+			<div id="footR">
+				<a idea="indoc" href="#top">Back to top</a>
+			</div>
+			<div id="footL">
+				<small>Designed by Brian Lovik, March 2015</small>
+			</div>
+		</footer>
+
+	</section>
+
+</body>
+</html>
