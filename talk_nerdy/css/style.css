@@ -4,7 +4,7 @@ body {
 .container {
 	width: 1000px;
 	margin: 0 auto;
-	border-width: 10px;	
+	border-width: 10px;
     border-style: ridge;
     border-radius: 10px;
 }
@@ -20,7 +20,7 @@ section {
 	overflow: hidden;
 	background-color: #3e7ca5;
 	margin: 0 auto;
-	border-width: 10px;	
+	border-width: 10px;
     border-style: ridge;
     border-radius: 10px;
     border-top-style: none;
@@ -141,6 +141,3 @@ footer div#footR {
 	float: right;
 	margin-right: 20px;
 }
-
-
-

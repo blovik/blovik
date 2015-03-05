@@ -10,6 +10,7 @@
 <body>
 
 	<a id="top"></a>
+	<!-- This element works, but validator doesn't like it. Using <a name="top"> worked too, but still unacceptable. Looking for a solution. -->
 
 	<div class="container">
 		<header>
@@ -29,7 +30,10 @@
 	</div><!-- /container -->
 
 	<section>
+		<!-- Everything following is contained in section. Used css overflow:hidden; so section accounted for floating elements. -->
 
+		<!-- I put aside first because it wouldn't float to the top-right when it came after two article floats left. It would also work second, but not third. Looking for a solution. -->
+		<!-- buttons change the hero image using JavaScript -->
 		<aside>
 			<p>
 				<button type="button" onclick="light(1)">Yellow</button>
@@ -46,6 +50,7 @@
 
 			<hr><br>
 
+			<!-- Dropdown Menu -->
 			<form id="howToDrop">
 				<select>
 					<option>- Dropdown Menu -</option>
@@ -57,18 +62,21 @@
 					<option>&lt;/select&gt;</option>
 				</select>
 			</form><br>
-			
+
 			<hr>
 
+			<!-- Inserted to fill space.
+			Question1: How to force input to be email only?
+			Quesiton2: How to make the initial value disappear on click. -->
 			<div id="subscribe">
 				<p> Want our newsletter?</p>
 				<p>Enter your email address here:</p>
 				<input type="email"
 				value="subscribe">
 			</div>
-  
 		</aside>
 
+		<!-- First Article defines TALK -->
 		<article>
 			<h1><i>Talk </i>Nerdy</h1>
 			<p class="cool">talk</p>
@@ -85,6 +93,7 @@
 			</ol><br>
 		</article>
 
+		<!-- Second Article defines NERD -->
 		<article>
 			<h1>Talk <i>Nerd</i>-y</h1>
 			<p class="cool">nerd</p>
@@ -100,12 +109,14 @@
 			<br>
 		</article>
 
+		<!-- Problem: Section didn't grow with contained Articles. Solution: CSS overflow:hidden; -->
 		<article>
 			<h1>Question</h1>
 			<p>I couldn't figure out how to get my "section" to grow with the articles. I tried using "min-height" but to no avail.</p>
-			<p>Answer: set overflow to hidden!</p>  
+			<p>Answer: set overflow to hidden!</p>
 		</article>
 
+		<!-- footer is broken into two divs to float left and right. -->
 		<footer>
 			<div id="footR">
 				<a idea="indoc" href="#top">Back to top</a>
@@ -114,6 +125,7 @@
 				<small>&copy; copyright Brian Lovik, March 2015</small>
 			</div>
 		</footer>
+		<!-- Note: Use clear:both; in css to break from floats -->
 
 	</section>
 
