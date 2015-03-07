@@ -1,0 +1,81 @@
+/*BACKGROUND*/
+body {
+	background-image: url("../img/background.jpg");
+	background-position: center top;
+	background-size: 100% auto;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+}
+
+/*HEADER*/
+header {
+	font-size: 2.5em;
+	font-weight: xxbold;
+	width: 90%;
+	margin: 0 auto;
+	background-color: gray;
+}
+
+/*NAV*/
+ul#nav li {
+	display: inline;
+	color: white;
+	background-color: none;
+	text-align: center;
+	width: 90%;
+}
+
+/*SECTION*/
+section {
+	width: 90%;
+	background-color: black;
+	color: white;
+	margin: 0 auto;
+}
+
+/*ASIDE*/
+aside {
+	position: fixed;
+	left: 79.4%;
+	top: 150px;
+	width: 200px;
+	background-color: #F5F5DC;
+}
+ul#aside {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #8B4513;
+	text-shadow: 2px 2px 9px black;
+	list-style: none;
+	line-height: 200%;
+}
+a:link.asideli {
+	color: #8B4513;
+}
+a:visited.asideli {
+	color: #8B4513;
+}
+a:hover.asideli {
+	color: yellow;
+	text-decoration: underline;
+}
+a:active.asideli {
+	color: #8B4513;
+}
+
+/*A HREF*/
+a {
+	text-decoration: none;
+}
+a:link {
+	color: white;
+}
+a:visited {
+	color: white;
+}
+a:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+a:active {
+	color: purple;
+}
