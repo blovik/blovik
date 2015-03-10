@@ -1,24 +1,29 @@
-/*BACKGROUND*/
+/*fFOR OLDER BROWSERS*/
+header, section, footer, aside, nav, article {
+    display: block; 
+}
+
+/*----------BACKGROUND-----------*/
 body {
 	background-image: url("../img/background.jpg");
 	background-position: center top;
 	background-size: 100% auto;
-	background-repeat: repeat-y;
+	background-repeat: repeat-y;/*Not needed because of fixed*/
 	background-attachment: fixed;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-/*HEADER*/
+/*-------------HEADER-------------*/
 header {
 	font-size: 2.5em;
 	font-weight: xxbold;
 	width: 90%;
 	margin: 0 auto;
-	background-color: none; 
+	background-color: none;
 }
 img#hero {
-	float: left;
+	float: left;/*Layered on top of page*/
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -26,17 +31,17 @@ img#hero {
 	margin: 0;
 	padding: 0;
 	position: fixed;
-	z-index: 10;
+	z-index: 10;/*Set above all else*/
 }
 h1 {
 	margin: 0;
-	visibility: hidden;
+	visibility: hidden;/*For visually empared*/
 	text-shadow: 4px 4px 18px black;
 	text-align: center;
 	margin-top: 20px;
 }
 
-/*NAV*/
+/*----------------NAV---------------*/
 nav {
 	width: 90%;
 	margin: 0 auto;
@@ -64,11 +69,11 @@ div#wrapper {
 	margin: 0 auto;
 }
 
-/*SECTION*/
+/*----------SECTION-----------*/
 section {
 	color: white;
 	margin: 0 auto;
-	padding: 20px 20px;
+	padding: 0px 20px;
 }
 img.img1 {
 	width: 200;
@@ -104,9 +109,7 @@ p.disc {
 	border-radius: 10px;
 }
 
-
-
-/*ASIDE*/
+/*------------ASIDE------------*/
 aside {
 	position: fixed;
 	left: 79.6%;
@@ -137,9 +140,9 @@ a:active.asideli {
 	color: #8B4513;
 }
 
-/*FOOTER*/
+/*----------FOOTER-----------*/
 footer {
-	clear: both;
+	clear: both;/*Clear floating*/
 	background-color: blue;
 	color: white;
 }
@@ -156,7 +159,7 @@ div#footL {
 	margin: 30px 0 30px 5%;
 }
 
-/*A HREF*/
+/*-------------A HREF-------------*/
 a {
 	text-decoration: none;
 }
@@ -174,7 +177,7 @@ a:active {
 	color: purple;
 }
 
-/*EXPERIMENTING*/
+/*--------EXPERIMENTING--------*/
 
 img.line {
 	width: 95%;
@@ -187,7 +190,7 @@ hr {
 	width: 100%;
 }
 
-img.img1 {
+img.imgExpand {
 
 	float: left;
 
@@ -198,7 +201,7 @@ img.img1 {
     position: relative;
 
     /* Preventing zoomed images to grow outside their elements */
-    overflow: hidden; 
+    overflow: hidden;
 
     /* Stretching the images to fill whole elements */
     width:       25%;
@@ -212,23 +215,14 @@ img.img1 {
     -moz-transition:    all 0.3s ease;
     -o-transition:      all 0.3s ease;
     -ms-transition:     all 0.3s ease;
-    transition:         all 0.3s ease; 
+    transition:         all 0.3s ease;
 
     border: 5px solid white;
 }
 
-img.img1:hover {
+img.imgExpand:hover {
     /* Making images appear bigger and transparent on mouseover */
     opacity: 10;
     width:   82%;
-    height:  82%; 
+    height:  82%;
 }
-
-
-
-
-
-
-
-
-
