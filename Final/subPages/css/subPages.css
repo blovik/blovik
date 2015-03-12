@@ -1,3 +1,25 @@
+/*------RESPONSIVE FONT SIZES------*/
+/*html {
+    font-size: 20px;
+}
+.unbehaved-element {
+    font-size: 2em;
+}
+@media(max-width: 1580px) {
+  html {
+    font-size: 18px;
+  }
+  .unbehaved-element {
+    font-size: 1.9em; /* Fine tune unbehaved elements */
+  }
+}
+@media(max-width: 980px) {
+  html {
+    font-size: 16px;
+  }
+}
+*/
+
 /*fFOR OLDER BROWSERS*/
 header, section, footer, aside, nav, article {
     display: block; 
@@ -5,7 +27,7 @@ header, section, footer, aside, nav, article {
 
 /*----------BACKGROUND-----------*/
 body {
-	background-image: url("../img/background.jpg");
+	background-image: url("../../img/background.jpg");
 	background-position: center top;
 	background-size: 100% auto;
 	background-repeat: repeat-y;/*Not needed because of fixed*/
@@ -39,6 +61,19 @@ h1 {
 	text-shadow: 4px 4px 18px black;
 	text-align: center;
 	margin-top: 20px;
+}
+div.subTitle {
+	float: left;
+	z-index: 5;
+	position: fixed;
+    left: 15px;
+    top: -5px;
+    z-index: 999;
+}
+h2.subTitle2 {
+	font-size: 1.6em;
+	text-shadow: 4px 4px 18px black;
+    opacity: 0.5;
 }
 
 /*----------------NAV---------------*/
@@ -229,3 +264,5 @@ img.imgExpand:hover {
     width:   82%;
     height:  82%;
 }
+
+

@@ -68,12 +68,30 @@ div#wrapper {
 	background-color: black;
 	margin: 0 auto;
 }
+li a.nav1 {
+	text-decoration: none;
+}
+li a:link.nav1 {
+	color: yellow;
+}
+li a:visited.nav1 {
+	color: yellow;
+}
+li a:hover.nav1 {
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	padding: 5px 0 30px 0;
+}
+li a:active.nav1 {
+	color: purple;
+}
 
 /*----------SECTION-----------*/
 section {
 	color: white;
 	margin: 0 auto;
-	padding: 0px 20px;
+	padding: 10px 20px;
 }
 img.img1 {
 	width: 200;
@@ -92,6 +110,7 @@ h2.title, p.price, p.disc {
 }
 h2.title {
 	font-size: 1.8em;
+	margin-top: 7px;
 }
 p.price {
 	font-size: 1.6em;
@@ -110,6 +129,11 @@ p.disc {
 }
 div.purchase {
 	margin-left: 323px;
+}
+img.line {
+	width: 95%;
+	height: 30px;
+	margin: 30px auto 0 auto;
 }
 
 /*------------ASIDE------------*/
@@ -138,9 +162,24 @@ a:visited.asideli {
 a:hover.asideli {
 	color: yellow;
 	text-decoration: underline;
+	text-decoration: none;
+	background-color: #F5F5DC;
+	padding: 0;
 }
 a:active.asideli {
 	color: #8B4513;
+}
+input#searchbox {
+    background-color: #eaf8fc;
+    border-radius: 35px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8B4513 #8B4513 #8B4513;            
+    width: 150px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px auto;
+    overflow: hidden; /* Clear floats */
 }
 
 /*----------FOOTER-----------*/
@@ -174,7 +213,6 @@ a:visited {
 }
 a:hover {
 	color: white;
-	text-decoration: underline;
 }
 a:active {
 	color: purple;
@@ -182,45 +220,32 @@ a:active {
 
 /*--------EXPERIMENTING--------*/
 
-img.line {
-	width: 95%;
-	height: 30px;
-	margin: 10px auto 0 auto;
-}
-
 hr {
 	clear: both;
 	width: 100%;
 }
 
 img.imgExpand {
-
 	float: left;
-
 	/*Pushing text off to the right*/
 	margin-right: 20px;
-
     /* This is necessary for position:absolute to work as desired */
     position: relative;
-
     /* Preventing zoomed images to grow outside their elements */
     overflow: hidden;
-
     /* Stretching the images to fill whole elements */
     width:       25%;
     height:      25%;
-
     /* Preventing blank space below the image */
     line-height: 0;
-
     /* Changing transition duration */
     -webkit-transition: all 0.3s ease;
     -moz-transition:    all 0.3s ease;
     -o-transition:      all 0.3s ease;
     -ms-transition:     all 0.3s ease;
     transition:         all 0.3s ease;
-
     border: 5px solid white;
+    margin-top: 10px;
 }
 
 img.imgExpand:hover {
