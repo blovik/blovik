@@ -2,11 +2,10 @@
 body {
 	margin: 0;
 	background-color: linen;
-	font-family: helvetica, Arial, sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 .container {
 	width: 1000px;
-	background-color: gray;
 	margin: 0 auto;
 }
 /*-------------------------------------------*/
@@ -20,6 +19,7 @@ header {
 	right: 0;
 	height: 110px;
 	background-color: linen;
+	z-index: 10;
 }
 .headl {
 	float: left;
@@ -40,25 +40,21 @@ header {
 	margin-left: 15px;
 }
 .headc a {
-	font-family: Helvetica, Arial, sans-serif;
 	color: black;
 	text-decoration: none;
-	text-shadow: 2px 2px 9px black;
+	text-shadow: 2px 2px 12px black;
 }
 .headc a:hover {
-	font-family: Helvetica, Arial, sans-serif;
 	color: gray;
 	text-decoration: underline;
-	text-shadow: 2px 2px 9px black;
+	text-shadow: 2px 2px 9px linen;
 }
 .headc a:visited {
-	font-family: Helvetica, Arial, sans-serif;
 	color: black;
 	text-decoration: none;
 	text-shadow: 2px 2px 9px black;
 }
 .headc a:active {
-	font-family: Helvetica, Arial, sans-serif;
 	color: black;
 	text-decoration: none;
 	text-shadow: 2px 2px 9px black;
@@ -89,8 +85,38 @@ div.homel {
 	margin-top: 40px;
 	border: 10px solid white;
 	box-shadow: 3px 3px 9px black;
-	transform: rotate(2deg);
+  	transform: rotate(2deg);
+ }
+/*body{background:#000;}
+.container{
+  margin:50px auto;
+  width:500px;
+  height:300px;
+  overflow:hidden;
+  border:10px solid;
+  border-top-color:#856036;
+  border-left-color:#5d4426;
+  border-bottom-color:#856036;
+  border-right-color:#5d4426;
+  position:relative;
+
 }
+.photo{
+  position:absolute;
+  animation:round 16s infinite;
+  opacity:0;
+  
+}
+@keyframes round{   
+  25%{opacity:1;}
+  40%{opacity:0;}
+} 
+
+img:nth-child(4){animation-delay:0s;}
+img:nth-child(3){animation-delay:4s;}
+img:nth-child(2){animation-delay:8s;}
+img:nth-child(1){animation-delay:12s;}*/
+
 div.homer {
 	float: right;
 }
@@ -103,7 +129,7 @@ div.homer {
 /*--------------end home main----------------*/
 
 /*-------------------------------------------*/
-/*----------------room main------------------*/
+/*----------------room page------------------*/
 .one img{
 	float: left;
 	border: 10px solid white;
@@ -112,38 +138,130 @@ div.homer {
 	height: 150px;
 	margin: 0 30px 30px 0;
 }
-/*--------------end room main----------------*/
+img.imgExpand {
+	float: left;
+	/*Pushing text off to the right*/
+	margin-right: 20px;
+    /* This is necessary for position:absolute to work as desired */
+    position: relative;
+    /* Preventing zoomed images to grow outside their elements */
+    overflow: hidden;
+    /* Stretching the images to fill whole elements */
+    width:       25%;
+    height:      25%;
+    /* Preventing blank space below the image */
+    line-height: 0;
+    /* Changing transition duration */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition:    all 0.3s ease;
+    -o-transition:      all 0.3s ease;
+    -ms-transition:     all 0.3s ease;
+    transition:         all 0.3s ease;
+}
+/*--------------end room page----------------*/
+
 
 /*-------------------------------------------*/
-/*------------------footer-------------------*/
+/*------------description page---------------*/
+.descriptionL img{
+	width: 600px;
+	height: 400px;
+}
+.descriptionL img:hover {
+	float: left;
+	/*Pushing text off to the right*/
+	margin-right: 20px;
+    /* This is necessary for position:absolute to work as desired */
+    position: relative;
+    /* Preventing zoomed images to grow outside their elements */
+    overflow: hidden;
+    /* Stretching the images to fill whole elements */
+    width:       1000px;
+    height:      800px;
+    /* Preventing blank space below the image */
+    line-height: 0;
+    /* Changing transition duration */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition:    all 0.3s ease;
+    -o-transition:      all 0.3s ease;
+    -ms-transition:     all 0.3s ease;
+    transition:         all 0.3s ease;
+}
+/*-----------end description page-----------*/
+
+
+/*------------------------------------------*/
+/*------------------footer------------------*/
 footer {
 	position: fixed;
+	width: 100%;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	height: 50px;
 	clear: both;
-	background-color: gray;
+	background-color: #cccccc;
 }
-footer p {
-	text-align: center;
-	color: white;
+.footl {
+	position: relative;
+	float: left;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	width: 800px;
 }
-.foot {
+.footl p {
+	display: inline-block;
 	margin-top: 0;
 }
-footl {
-	clear: both;
-	float: left;
-	top: 0;
-	width: 100px;
+.footl pre {
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 20px;
 }
 #facebook {
 	width: 45px;
 	height: 45px;
 }
-/*----------------end footer----------------*/
+footer img {
+	vertical-align: middle;
+}
+.footr {
+	position: relative;
+	float: right;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	width: 150px;
+	text-align: right;
+}
+.footr p {
+	display: inline-block;
+	margin-top: 13px;
+	font-size: .8em;
+}
+a:link {
+	color: black;
+    text-decoration: none;
+}
 
+a:visited {
+	color: black;
+    text-decoration: none;
+}
+
+a:hover {
+	color: gray;
+    text-decoration: underline;
+}
+
+a:active {
+	color: black;
+    text-decoration: underline;
+}
+/*----------------end footer----------------*/
 
 
 

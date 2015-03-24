@@ -4,7 +4,9 @@
  	<meta charset="utf-8">
  	<title>Bridge Street</title>
  	<link rel="stylesheet" type="text/css" href="css/style.css">
+ 	<link rel="stylesheet" type="text/css" href="css/room.css">
  	<script type="text/javascript" src="js/script.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
  </head>
  <body>
  	<header>
@@ -16,19 +18,19 @@
 	 		<nav class="headr">
 
 	 			<ul class="headc">
-	 				<li class="roomname">DINING ROOM</li>
+	 				<li class="roomname">Dining Room</li>
 	 				<li><a href="tel:+5593726149">Call now</a></li>
-	 				<li><a href="mailto:darin@bridgestreetbrg.comsubject=Internet%20Purchase%20Request$body=I%20would%20like%20to%20purchase%20...target=_top">Email now</li>
+	 				<li><a href="mailto:darin@bridgestreetbrg.comsubject=Internet%20Purchase%20Request$body=I%20would%20like%20to%20purchase%20...target=_top">Email now</a></li>
 	 				<li><a href="about.html">
 	 					About Us</a></li>
 	 				<li><button onclick="myFunction()">Contact Info</button></li>
 	 				<li>
-		 						 		<form>
 					<select id="setit" >
 						<option value="">Select One</option>
+						<option value="index.html">Home</option>
 						<option value="dining.html">Dining Room</option>
 						<option value="front.html">Front Room</option>
-						<option value="kithen.html">Kitchen</option>
+						<option value="kitchen.html">Kitchen</option>
 						<option value="patio.html">Patio/Outside</option>
 						<option value="bedroom.html">Bedroom</option>
 						<option value="walls.html">Walls</option>
@@ -41,33 +43,234 @@
  		</div>
  	</header>
 
- 	<main>
- 		<div class="container">
- 		<div class="spacer">
- 		</div>
- 			<div class="one">
- 				<img src="img/desk1.jpg">
- 				<img src="img/dresser1.jpg">
- 				<img src="img/1.jpg">
- 				<img src="img/2.jpg">
- 				<img src="img/3.jpg">
- 				<img src="img/4.jpg">
- 				<img src="img/5.jpg">
- 				<img src="img/6.jpg">
- 				<img src="img/7.jpg">
- 				<img src="img/8.jpeg">
- 				<img src="img/9.jpg">
- 				<img src="img/10.jpg">
- 				<img src="img/11.jpg">
- 			</div>
+		<div class="spacer"></div>
 
- 		</div>
- 	</main>
+ 		<div class="container">
+
+		<div class="main-wrapper">
+			<div class="row">
+			<div class = "col-sm-6 col-md-3">
+				<div class="box">
+					<img src="img/desk1.jpg" alt="Victorian desk">
+					<div class="caption fade-caption">
+						<h3>Victorian Desk</h3>
+						<p>
+							$3,478.00
+						</p>
+						<a class="link" href="#">More detail</a>
+					</div>
+				</div>
+			</div>	
+			<div class = "col-sm-6 col-md-3">
+				<div class="box">
+					<img src="img/loveseat1.jpeg" alt="picture of a loveseat">
+					<div class="caption fade-caption">
+						<h3>Loveseat</h3>
+						<p>
+							$5,678.00
+						</p>
+						<a class="link" href="#">More detail</a>
+					</div>
+				</div>
+			</div>
+			<div class = "col-sm-6 col-md-3">
+				<div class="box">
+					<img src="img/dresser1.jpg" alt="dresser">
+					<div class="caption fade-caption">
+						<h3>Dresser</h3>
+						<p>
+							$1,253.00
+						</p>
+						<a class="link" href="#">More detail</a>
+					</div>
+				</div>
+			</div>
+			<div class = "col-sm-6 col-md-3">
+				<div class="box">
+					<img src="img/1.jpg" alt="thingy-ma-jingy">
+					<div class="caption fade-caption">
+						<h3>Cabinet</h3>
+						<p>
+							$1,845.00
+						</p>
+						<a class="link" href="#">More detail</a>
+					</div>
+				</div>
+			</div>
+			</div><!-- ends row  one -->
+
+			<!-- Row Two -->
+			<div class="row">
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/2.jpg" alt="Victorian desk">
+						<div class="caption fade-caption">
+							<h3>Cabinet</h3>
+							<p>
+								$1,478.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>	
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/3.jpg" alt="cabinet">
+						<div class="caption fade-caption">
+							<h3>Cabinet</h3>
+							<p>
+								$678.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/4.jpg" alt="dresser">
+						<div class="caption fade-caption">
+							<h3>Fine European Seating Set</h3>
+							<p>
+								$8,253.00
+							</p>
+							<a class="link" href="chairs.html">More detail</a>
+						</div>
+					</div>
+				</div>
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/5.jpg" alt="thingy-ma-jingy">
+						<div class="caption fade-caption">
+							<h3>Desk</h3>
+							<p>
+								$2,845.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- ends row two -->
+
+			<!-- Row Three -->
+			<div class="row">
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/6.jpg">
+						<div class="caption fade-caption">
+							<h3>Dresser</h3>
+							<p>
+								$1,125.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>	
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/7.jpg" alt="picture of a loveseat">
+						<div class="caption fade-caption">
+							<h3>Dresser</h3>
+							<p>
+								$1,478.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/8.jpeg" alt="dresser">
+						<div class="caption fade-caption">
+							<h3>Couch</h3>
+							<p>
+								$12,253.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/9.jpg" alt="thingy-ma-jingy">
+						<div class="caption fade-caption">
+							<h3>Room Set</h3>
+							<p>
+								$10,845.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- ends row three -->
+
+			<!-- Row Four -->
+			<div class="row">
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/10.jpg" alt="Victorian desk">
+						<div class="caption fade-caption">
+							<h3>Table</h3>
+							<p>
+								$3,478.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>	
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/11.jpg" alt="picture of a loveseat">
+						<div class="caption fade-caption">
+							<h3>Cabinet</h3>
+							<p>
+								$5,678.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/dresser1.jpg" alt="dresser">
+						<div class="caption fade-caption">
+							<h3>Dresser</h3>
+							<p>
+								$1,253.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>
+				<div class = "col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/1.jpg" alt="thingy-ma-jingy">
+						<div class="caption fade-caption">
+							<h3>Cabinet</h3>
+							<p>
+								$1,845.00
+							</p>
+							<a class="link" href="#">More detail</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- ends row four -->
+				
+			<div class="spacer"></div>
+		</div> <!-- ends main wrapper -->
 
  	<footer>
  		<div class="container">
- 			<input class="foot" type="search">
- 			<img src="img/facebook.png" alt="click to follow us on facebook.">
+ 			<div class="footl">
+ 				Search: <input class="foot" type="search">
+ 				<pre>           </pre>
+ 				<p><a href="tel:+5593726149">Call Darin at (559) 732-1234</a></p>
+ 				<pre>           </pre>
+ 				<p><a href="http:www.facebook.com">Follow us on Facebook</a></p>
+ 					<a href="http:facebook.com"><img id="facebook" src="img/facebook.png" alt="click to follow us on facebook."></a>
+ 			</div>
+			<div class="footr">
+				<p>&copy; Lovik, 2015</p>
+			</div>
  		</div>
  	</footer>
  
