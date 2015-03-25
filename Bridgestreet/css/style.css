@@ -161,6 +161,19 @@ img.imgExpand {
 
 
 /*------------------------------------------*/
+/*----------------About Us------------------*/
+#mountains {
+	float: right;
+	position: relative;
+	right: 0;
+	bottom: 105px;
+	border: 6px solid white;
+	box-shadow: 2px 2px 9px black;
+}
+/*---------------End About Us---------------*/
+
+
+/*------------------------------------------*/
 /*------------------footer------------------*/
 footer {
 	position: fixed;
