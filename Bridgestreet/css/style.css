@@ -87,36 +87,6 @@ div.homel {
 	box-shadow: 3px 3px 9px black;
   	transform: rotate(2deg);
  }
-/*body{background:#000;}
-.container{
-  margin:50px auto;
-  width:500px;
-  height:300px;
-  overflow:hidden;
-  border:10px solid;
-  border-top-color:#856036;
-  border-left-color:#5d4426;
-  border-bottom-color:#856036;
-  border-right-color:#5d4426;
-  position:relative;
-
-}
-.photo{
-  position:absolute;
-  animation:round 16s infinite;
-  opacity:0;
-  
-}
-@keyframes round{   
-  25%{opacity:1;}
-  40%{opacity:0;}
-} 
-
-img:nth-child(4){animation-delay:0s;}
-img:nth-child(3){animation-delay:4s;}
-img:nth-child(2){animation-delay:8s;}
-img:nth-child(1){animation-delay:12s;}*/
-
 div.homer {
 	float: right;
 }
@@ -138,26 +108,6 @@ div.homer {
 	height: 150px;
 	margin: 0 30px 30px 0;
 }
-img.imgExpand {
-	float: left;
-	/*Pushing text off to the right*/
-	margin-right: 20px;
-    /* This is necessary for position:absolute to work as desired */
-    position: relative;
-    /* Preventing zoomed images to grow outside their elements */
-    overflow: hidden;
-    /* Stretching the images to fill whole elements */
-    width:       25%;
-    height:      25%;
-    /* Preventing blank space below the image */
-    line-height: 0;
-    /* Changing transition duration */
-    -webkit-transition: all 0.3s ease;
-    -moz-transition:    all 0.3s ease;
-    -o-transition:      all 0.3s ease;
-    -ms-transition:     all 0.3s ease;
-    transition:         all 0.3s ease;
-}
 /*--------------end room page----------------*/
 
 
@@ -178,6 +128,26 @@ img.imgExpand {
     /* Stretching the images to fill whole elements */
     width:       1000px;
     height:      800px;
+    /* Preventing blank space below the image */
+    line-height: 0;
+    /* Changing transition duration */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition:    all 0.3s ease;
+    -o-transition:      all 0.3s ease;
+    -ms-transition:     all 0.3s ease;
+    transition:         all 0.3s ease;
+}
+img.imgExpand {
+	float: left;
+	/*Pushing text off to the right*/
+	margin-right: 20px;
+    /* This is necessary for position:absolute to work as desired */
+    position: relative;
+    /* Preventing zoomed images to grow outside their elements */
+    overflow: hidden;
+    /* Stretching the images to fill whole elements */
+    width:       25%;
+    height:      25%;
     /* Preventing blank space below the image */
     line-height: 0;
     /* Changing transition duration */
@@ -215,7 +185,7 @@ footer {
 	display: inline-block;
 	margin-top: 0;
 }
-.footl pre {
+.footl pre { /*add spaces between content*/
 	display: inline-block;
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -234,7 +204,7 @@ footer img {
 	margin-top: 0;
 	margin-bottom: 10px;
 	padding-bottom: 20px;
-	width: 150px;
+	width: 130px;
 	text-align: right;
 }
 .footr p {
