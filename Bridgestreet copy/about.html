@@ -6,8 +6,6 @@
  	<link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />	
  	<link rel="stylesheet" type="text/css" href="css/style.css">
  	<script type="text/javascript" src="js/script.js"></script>
- 	<meta name="description" content="Bridge Street Bargains’s is a Visalia antiques store featuring unique items changing every day.">
- 	<meta name="keywords" content="antique stores in tulare county ca, kings county, fresno county, vintage, vintage furniture, old furniture, table, desk, dresser, bed set, bed frame, bargains, bookcase, cabinet, collectables, antiques dealers, thrift store, estate sales, darin sawyer, antique sales, estate liquidation, estate sale, great price, discount, san Joaquin, central valley, California, Visalia, madera, modesto, fresno, hanford, farmersville, exeter, goshen, clovis, tulare, porterville, lindsay, selma, reedley, woodlake, lemon cove, corcoran, fowler, malaga, three rivers, cutler, orosi, ivanhoe, strathmore,tipton, lucurne, armona, lemoore, used furniture">
  </head>
  <body>
  	<header>
@@ -15,7 +13,9 @@
 	 		<div class="headl">
  				<a href="index.html"><img id="logo" src="img/hero.png" alt="Bridge Street Bargains logo"></a>
  			</div>
+ 	
 	 		<nav class="headr">
+
 	 			<ul class="headc">
 	 				<li><a href="tel:+5593726149">Call now</a></li>
 	 				<li><a href="mailto:darin@bridgestreetbrg.com">Email now</a></li>
@@ -24,7 +24,7 @@
 	 				<li><button onclick="myFunction()">Contact Info</button></li>
 	 				<li>
 						<select id="setit" >
-							<option value="">See More - Click Here!</option>
+							<option value="">Enter Rooms</option>
 							<option value="dining.html">Dining Room</option>
 							<option value="front.html">Front Room</option>
 							<option value="kitchen.html">Kitchen</option>
@@ -35,35 +35,30 @@
 							<input type="button" value="Go" onclick="window.open(setit.options[setit.selectedIndex].value, '_self', true)">
 		 			</li>
 		 		</ul>
+
 	 		</nav>
- 		</div> <!-- close container -->
+ 		</div>
  	</header>
 
- 	<main> <!-- only contains pictures -->
+ 	<main>
  		<div class="container">
- 			<div class="spacer">
- 			</div>
- 			<div class="homel">
- 				<a href="bedroom.html"><img class="homepic" src="img/bedroom2.jpg" alt="picture of a bedroom set"></a>
- 			</div>
- 			<div class="homer">
- 				<a href="front.html"><img class="homepic" src="img/loveseat1.jpeg" alt="picture of a loveseat"></a>
- 			</div>
- 		</div> <!-- close container -->
- 		<div class="container">
- 			<div class="homel">
- 				<a href="front.html"><img class="homepic" src="img/mickeytelephone1.jpeg" alt="picture of mickey mouse telephone"></a>
- 			</div>
- 			<div class="homer">
- 				<a href="front.html"><img class="homepic" src="img/desk2.jpg" alt="picture of a desk"></a>
- 			</div>
- 		</div> <!-- close container -->
- 		<div class="spacer"></div>
+ 			<div class="spacer"></div>
+ 			<h2>About Bridge Street Bargains</h1>
+ 			<h3>Where? Visalia, CA</h3>
+ 			<p>Visalia  is situated in the middle of the San Jaquin valley in central California. To our east we daily gaze at the granduer of the Sierra mountains, containing the world famous redwood trees. To our east we have the coastal range and then the coast with its beautiful beaches. Here in Tulare county we supply the world with fruit, nuts, grapes and grains.</p>
+ 			<h3>Who? The Sawyers</h3>
+ 			<p>Our family moved into the area in the 1930's. My wife, Cathy, and I have raise two wonderful daughters who are the pride of our lives. They even volunteer time to help out with the store.</p>
+ 			<p>Some years ago I discovered that I have a knack for finding vintage furniture and other collectables. I travel all over the area attending and conducting estate sales and auctions. I recognize quality items and good prices. I think you will like my selection.</p>
+ 			<p>If you are looking for an item, email me or give me a call and I will keep my eyes open for the <br>treasure you seek.</p>
+ 			<p>Darin Sawyer</p>
+ 			<button onclick="goBack()">Return to previous page</button>
+ 			<img id="mountains" src="img/mountains.jpeg">
+ 		</div>
  	</main>
 
 	<footer>
  		<div class="container">
- 			<div class="footl"> <!-- left footer -->
+ 			<div class="footl">
  				Search: <input class="foot" type="search">
  				<pre>           </pre>
  				<p><a href="tel:+5593726149">Call Darin at (559) 732-1234</a></p>
@@ -72,10 +67,10 @@
 
  				<a href="https://www.facebook.com/pages/Bridge-Street-Bargains/116109348480972" target="_blank"><img id="facebook" src="img/facebook.png" alt="click to follow us on facebook." target="_blank"></a>
  			</div>
-			<div class="footr"> <!-- right footer -->
+			<div class="footr">
 				<p>&copy; Lovik, 2015</p>
 			</div>
- 		</div> <!-- close container -->
+ 		</div>
  	</footer>
  
  </body>
