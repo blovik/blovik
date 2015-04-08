@@ -40,6 +40,15 @@ h1 {
 	margin: 10px 0 5px 20px;
 	text-shadow: 2px 2px 5px black;
 }
+/*h1:hover {
+	text-shadow: 2px 2px 5px #ebafb2;
+}*/
+h1:hover:after {
+	content: " ! !";
+}
+h1.select {
+	text-shadow: 2px 2px 5px white;
+}
 nav {
 	display: inline-block;
 	position: absolute;
