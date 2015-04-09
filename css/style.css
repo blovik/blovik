@@ -3,16 +3,12 @@ body {
 	padding: 0;
 	overflow: auto;
 	font-family: 'Nixie One', cursive;
-	font-size: 1.3em;
+	font-size: 2em;
 	background-color: black;
 }
 .container {
-	position: relative;
-	width: 1020px;
-	margin: 0 auto;
 	background-color: #bbe6b7;
-	border-left: 4px solid #bbe6b7;
-	border-right: 4px solid #bbe6b7;
+	border-radius: 30px 30px 30px 30px;
 }
 .clearfix {
     content: "";
@@ -21,23 +17,20 @@ body {
 }
 /*---------------------------------------*/
 /*-----------------header----------------*/
-header {
-	position: relative;
-	margin-left: -4px;
-	width: 100%;
-	height: 10	0px;
+.header {
 	background-color: #a7acdd;
-	border-left: 4px solid #a7acdd;
-	border-right: 4px solid #a7acdd;
+	height: 80px;
+	margin-bottom: 20px;
+	border-radius: 30px 30px 0 0;	
+}
+.header ul {
+	margin-top: 20px;
 }
 h1 {
 	font-family: 'Satisfy', cursive;
 	font-size: 40px;
 	text-align: center;
 	color: white;
-	display: inline-block;
-	width: 300px;
-	margin: 10px 0 5px 20px;
 	text-shadow: 2px 2px 5px black;
 }
 /*h1:hover {
@@ -49,17 +42,7 @@ h1:hover:after {
 h1.select {
 	text-shadow: 2px 2px 5px white;
 }
-nav {
-	display: inline-block;
-	position: absolute;
-	width: 50%;
-	top: 0px;
-	right: 0;
-	text-align: right;
-	margin-right: 20px;
-}
 .nav ul {
-	display: inline;
 	list-style-type: none;
 }
 .nav li {
@@ -100,29 +83,24 @@ nav {
 }
 /*---------------------------------------*/
 /*-----------------main------------------*/
-main {
-	display: inline-block;
-	position: relative;
-	width: 778px;
-	margin: 10px 0 0 5px;
-	vertical-align: top;
+.main {
 	padding: 0 20px;
-
+	margin-left: 20px;
 }
-main h2 {
+.main h2 {
 	text-shadow: 2px 2px 15px #ebafb2;
 }
-main p {
+.main p {
 	line-height: 1.2;
 	opacity: .7;
 	padding-left: 20px;
 	text-indent: -20px;
 }
-main p:hover {
+.main p:hover {
 	opacity: 1;
 	font-weight: bold;
 }
-main p:before {
+.main p:before {
 	content: "*";
 	color: #a7acdd;
 	font-size: 2em;
@@ -130,41 +108,36 @@ main p:before {
 }
 /*---------------------------------------*/
 /*-----------------aside-----------------*/
-aside {
-	display: inline-block;
-	position: relative;
-	width: 160px;
-	height: 700px;
+.aside {
 	background-color: #ebafb2;
-	/*padding: 0 20px;*/
 	border-radius: 30px;
-	margin: 10px 0 0 10px;
 	box-shadow: 2px 2px 9px black;
 	padding: 0;
+	margin-left: 20px;
 }
-aside h2 {
+.aside h2 {
 	text-align: center;
 	font-weight: bold;
 	text-shadow: 2px 2px 15px #bbe6b7;
 }
-aside h2:before {
+.aside h2:before {
 	content: "-";
 }
-aside h2:after {
+.aside h2:after {
 	content: "-";
 }
-aside ul li {
+.aside ul li {
 	line-height: 2.5;
 	list-style-type: none;
 	padding: 0px;
-	margin: 0 0 0 -10px;
 	text-align: center;
 }
-aside ul {
+ul {
 	margin-left: 0em;
+	list-style-type: none;
+	padding-left: .75em;
 }
-aside a {
-	display: block;
+a {
 	text-decoration: none;
 	color: white;
     width: 100px;
@@ -173,10 +146,8 @@ aside a {
     -webkit-transition: width 2s, height 2s, -webkit-transform 2s;*/ /* Safari */
     transition: width 2s, height 2s, transform 1s;
 }
-aside a:hover {
-	position: relative;
-    width: 100px;
-    height: 50px;
+a:hover {
+	text-decoration: none;
     color: black;
     text-shadow: 1px 1px 4px white;
     -webkit-transform: rotate(360deg);*/ /* Safari */
@@ -199,41 +170,45 @@ a.fade:hover span{ /*the span will display just on :hover state*/
     border:1px solid #0cf;
     background-color:#cff; color:#000;
     text-align: center}
-aside:hover {
+.aside:hover {
 	box-shadow: none;
 }
-figure {
-	width: 100%;
-}
-aside img {
+.aside img {
 	width: 70%;
 	height: 70%;
+	padding-left: 40px;
 }
-aside img:hover {
+.aside img:hover {
 	-webkit-filter: blur(3px);
   	-moz-filter: blur(3px);
  	-o-filter: blur(3px);
   	-ms-filter: blur(3px);
   	filter: blur(3px);
 }
-aside figcaption {
+.aside figcaption {
 	font-size: .6em;
+	text-align: center;
 }
 /*---------------------------------------*/
 /*---------------footer------------------*/
-footer {
+.test {
+	padding: 5px 0 2px 0;
+	margin: 0px;
+}
+.footer {
+	height: 97px;
 	background-color: #a7acdd;
-	width: 1020px;
-	margin: -21px auto 0 auto;
 	border-radius: 0 0 30px 30px;
-	border-left: 4px solid #a7acdd;
-	border-right: 4px solid #a7acdd;
-}
-footer p {
 	text-align: center;
-	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: -30px;
 }
-footer:hover {
+.footer p {
+	text-align: center;
+	font-size: 1em;
+	padding: 30px;
+}
+.footer:hover {
 	opacity: .7;
 	color: white;
 	border-left: 4px solid #bbe6b7;
@@ -253,38 +228,12 @@ footer:hover {
 }
 
 /*testing*/
-#bootcamp {
-	filter: blur (4px);
-}
-#bootcamp {
-	position: fixed;
-	top: 300px;
-	left: -220px;
-	width: 600px;
-	height: 30px;
-    color: #202020;
-    font-size: 3em;
-    font-weight: 900;
-    /*Rotate div*/
-    -ms-transform: rotate(270deg); /* IE 9 */
-    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
-    transform: rotate(270deg);
-    z-index: 51;
-}
-#geekwise {
-	position: fixed;
-	top: 340px;
-	right: -220px;
-	width: 600px;
-	height: 30px;
-	background-color: black;
-	color: #202020;
-	font-size: 3em;
-	font-weight: 900;
-	z-index: 50;
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
+=======================================
 
-}
+
+
+
+
+
+
 
