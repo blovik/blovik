@@ -1,0 +1,80 @@
+
+
+h1 {
+	color: #008CBE;
+	text-shadow: 0px 1px 1px #000000;
+	font-weight: bold;
+}
+
+#one {
+	display: none;
+}
+
+.contact {
+	background-color: #008CBE;
+	color: #ffffff;
+    padding-top: 20px;
+    text-shadow: 0px 1px 1px #000000;
+    margin-bottom: 10px;
+}
+
+.content {
+    color: #000000;
+    padding: 10px 20px;
+}
+
+
+.ed {
+	padding-left: 20px;
+	padding-top: 0px;
+}
+
+/*span {
+    background-color: yellow;
+}*/
+
+/*====================testing======================*/
+.toggle-box {
+    margin: 0px;
+}
+
+.toggle-box p {
+    margin: 0;
+    padding: 0;
+}
+
+.toggle-title {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #EFEFEF;
+    /*border: 1px solid #45536C;*/
+    cursor: pointer;
+    /*-moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;*/
+}
+
+.toggle-title:hover,
+.toggle-title:active {
+    background: #E3E3E3;
+    text-shadow: 0px 1px 1px #ffffff;
+}
+
+.toggle-title:hover {
+    color: #008CBE;
+}
+
+.active {
+    background: #008CC2;
+    color: #ffffff;
+}
+
+.toggle-title a {
+    color: #111;
+}
+
+.toggle-content {
+    padding-bottom: 20px;
+}
+
