@@ -1,37 +1,112 @@
-alert("it works");
-
 $(document).ready(function(){
 
-	// $("h3").on("mouseenter", function() {
-	// 	$("div").find("span").css("background-color","#A6FFE1")
+	// $('.accordion dd > a').on('click', function() {
+ //    	$(this).next().toggleClass('active');
 	// });
-
-	// $(".button").on("mouseleave", function() {
-	// 	$("span").css("background-color","#white")
-	// });
-
-	// $(".whoop").on("mouseenter", function() {
-	// 	$("span").css("background-color","#A6FFE1")
-	// });
-
-	// $(".whoop").on("mouseleave", function() {
-	// 	$("span").css("background-color","white")
-	// });
-
-	// $("h3").on("click", function() {
-	// 	$(this).next().css("displayToggle", "inline");
-	// });
-
-
-	$('.accordion dd > a').on('click', function() {
-    	$(this).next().toggleClass('active');
-	});
 
 	$(".toggle-content").hide();
-    $(".toggle-title").click(function() {
+    $(".toggle-title").on('click', function() {
         $(this).next(".toggle-content").slideToggle("normal");
         $(this).toggleClass('active');
     });
+
+    $('.card').mouseover(function() {
+    current_src = $(this).attr("src");
+    $(this).attr("src", "img/businessCardFJR.png");
+	});
+
+	$('.card').mouseout(function() {
+	    $(this).attr("src", "img/businessCardfjr.jpg");
+	});
+
+	$('.content').mouseover(function(){
+		$(this).find('span.highlight').fadeIn(5000, function () {
+			$(this).css("background-color", "#F2F7D6");})
+	});
+
+	$('.content').mouseout(function(){
+		$(this).find('span.highlight').css("background-color", "#ffffff");
+	});
+
+	$('.pre').mouseover(function(){
+		$( ".yellow" ).replaceWith( "Hire Brian" );
+	});
+
+	$(".rideBtn").on('click', function () {
+	$("#ride").show("slow");
+	$("#pictures").hide("slow");
+	$("#contact").hide("slow");
+	$("#follow").hide("slow");
+	$("#join").hide("slow");
+	$("#calendar").hide("slow");
+	});
+
+	$("#picturesBtn").on('click', function () {
+	$("#ride").hide("slow");
+	$("#pictures").show("slow");
+	$("#contact").hide("slow");
+	$("#follow").hide("slow");
+	$("#join").hide("slow");
+	$("#calendar").hide("slow");
+	});
+
+	$("#contactBtn").on('click', function () {
+	$("#ride").hide("slow");
+	$("#pictures").hide("slow");
+	$("#contact").show("slow");
+	$("#follow").hide("slow");
+	$("#join").hide("slow");
+	$("#calendar").hide("slow");
+	});
+
+	$("#followBtn").on('click', function () {
+	$("#ride").hide("slow");
+	$("#pictures").hide("slow");
+	$("#contact").hide("slow");
+	$("#follow").show("slow");
+	$("#join").hide("slow");
+	$("#calendar").hide("slow");
+	});
+
+	$("#joinBtn").on('click', function () {
+	$("#ride").hide("slow");
+	$("#pictures").hide("slow");
+	$("#contact").hide("slow");
+	$("#follow").hide("slow");
+	$("#join").show("slow");
+	$("#calendar").hide("slow");
+	});
+
+	$("#calendarBtn").on('click', function () {
+	$("#ride").hide("slow");
+	$("#pictures").hide("slow");
+	$("#contact").hide("slow");
+	$("#follow").hide("slow");
+	$("#join").hide("slow");
+	$("#calendar").show("slow");
+	});
+
+// test slideshow
+	jQuery(document).foundation({
+	  orbit: {
+	    animation: 'slide',
+	    animationSpeed: 800,
+	    timer_speed: 3000,
+	    pause_on_hover: true,
+	    animation_speed: 500,
+	    navigation_arrows: true,
+	    bullets: false,
+	    slide_number: false
+	  }
+	});
+
+
+
+
+
+
+
+
 
 
 });
